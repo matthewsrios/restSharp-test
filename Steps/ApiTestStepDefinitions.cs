@@ -25,7 +25,6 @@ namespace rest_sharp_test.Steps
         {
             var request = new RestRequest(endpoint, Method.Get);
             _response = _client.Execute(request);
-            Console.WriteLine(_response);
         }
 
         [Then(@"I see status (\d+)")]
